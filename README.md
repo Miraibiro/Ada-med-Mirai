@@ -4,4 +4,4 @@ Denna repository är skpad bara för Stephanie M. Arrenander som går Linköping
 "Mirai levererar igen.
 Kod skriven enligt konstens alla regler. Lärarhjärtat värms av sådana inlämningar.
 Helt klart godkänt!"
-- Fabian, 2020
+ /Fabian, 2020
