@@ -4,7 +4,6 @@ use Ada.Command_Line, Ada.Text_IO, Ada.Integer_Text_IO;
 procedure Jado is
    
    Longest : Integer := 1;
-   Length_Ord : Integer;
    
 begin 
    
@@ -20,7 +19,6 @@ begin
       
       if Argument(I)'Length > Argument(Longest)'Length then 
 	 Longest := I;
-	 Length_Ord := Argument(Longest)'Length;
       end if;
       
    end loop;
