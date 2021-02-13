@@ -93,9 +93,9 @@ begin
       Put ("Vill du köra igen (N ger 'NEJ' / Enter eller J ger 'JA'): ");
       Get_Line (Svar,I);
       
-     -- if I = Svar'Last then 
---	 Skip_Line; 
-      --end if; 
+     if I = Svar'Last then  -- (Denna del kan vara med för säkerhetens skulle)
+	Skip_Line; 
+     end if; 
             
       exit when (Svar(1)) = 'N'; 
  
