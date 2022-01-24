@@ -1,0 +1,48 @@
+with Ada.Text_IO, Ada.Integer_Text_IO;
+use Ada.Text_IO, Ada.Integer_Text_IO;
+
+procedure Yalla_Banan is
+   
+   function Inmat  return String is 
+      S : String (1..1);
+   begin
+      
+      if End_Of_Line then
+	 return null;
+      else
+	 Get (S);
+	 return Inmat & S;
+      end if;
+           
+   end Inmat;
+   
+	 
+   function Skriva (S : in Strin; N : in Natural) return integer is
+      I : Integer;
+   begin
+      if then
+	 null;
+      else
+	 Put (S(N));
+	 I := N + 1;
+	 Skriva (S, N);
+      end if;
+      
+      end Skriva;
+      
+   
+   
+   
+   N : Integer;
+  
+   
+begin
+   Put ("Mata in en sträng: ");
+   
+ N :=  Skriva(Inmat, N);
+   New_Line;
+   Put ("Längden av strängen var ");
+   Put (N,0);
+   
+   
+end Yalla_Banan;

@@ -1,0 +1,38 @@
+with Ada.Text_IO, Ada.Integer_Text_Integer;
+use Ada.Text_IO, Ada.Integer_Text_Integer;
+
+procedure Happy is
+   
+   procedure Rad (R : in Integer) is
+   begin
+      
+      
+      
+      
+   end Rad;
+   
+   
+   
+   procedure Utskriv (N : in Integer) is 
+   begin
+      
+      if N = 0 then
+	 null;
+      else
+	 Rad (N);
+	 Utskriv (N - 1);
+      end if;
+            
+   end Utskriv;
+   
+   
+   N : Integer;
+   
+begin 
+   
+   Put ("Mata in storlek (N): ");
+   Get (N);
+   
+   Utskriv (N);
+   
+end Happy;

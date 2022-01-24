@@ -1,0 +1,15 @@
+with Ada.Text_IO, Ada.Integer_Text_IO;
+use Ada.Text_IO, Ada.Integer_Text_IO;
+
+procedure Fibo is
+   
+   function Summa (N, I1, I2 : in Integer) return Integer is
+   begin
+      
+      if N = 0 then 
+	 return 0;
+      elsif N = 1 then 
+	 return I1;
+      else
+	 
+	 

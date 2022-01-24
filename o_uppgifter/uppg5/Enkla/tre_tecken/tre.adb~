@@ -1,0 +1,16 @@
+with Ada.Text_IO;
+use Ada.Text_IO;
+
+procedure Tre is
+   
+   procedure Get_Put is
+      S : String (1..3);
+   begin
+      
+      Get (S);
+      
+      if S = "---" then
+	 null;
+      else
+	 Get_Put;
+	 Put_Line (S);

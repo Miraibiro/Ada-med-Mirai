@@ -1,0 +1,79 @@
+with Ada.Text_IO, Ada.Integer_Text_IO;
+use Ada.Text_IO, Ada.Integer_Text_IO;
+
+procedure Konstig_Tri is 
+   
+   procedure Utskriv (I, int: in Integer; S : in String) is
+      Inte : Integer;
+      procedure Rad (I: in Integer; S : in String) is
+	 
+      begin
+	 
+	 for C in 1..(I - 1) loop
+	    Put (' ');
+	 end loop;
+	 
+	 Put (S (I));
+	 New_Line;
+	 
+      end Rad;
+      
+      
+   begin
+      
+      if I = 0 then 
+	 null;
+      else
+	 Inte := Int - I;
+	  Rad (Inte, S);
+	 Utskriv (I - 1,Int, S);
+	
+      end if;
+      
+   end Utskriv;  
+   -----------------
+   
+   procedure Utskriv_2 (I, I_Org: in Integer; S : in String) is
+      Int : Integer := I_Org;
+      procedure Rad (I: in Integer; S : in String) is
+	 
+      begin
+	 
+	 for C in 1..(I - 1) loop
+	    Put (' ');
+	 end loop;
+	 
+	 Put (S (I));
+	 New_Line;
+	 
+      end Rad;
+      
+      
+   begin
+      
+      if I = 0 then 
+	 null;
+      else
+	 Rad (I, S);
+	 Utskriv_2 (I - 1, I_Org, S);
+	 
+      end if;
+      
+   end Utskriv_2;  
+   
+   I, Tal : Integer;
+   S : String (1..I);
+   
+begin
+   
+   Put ("Mata in ett heltal: ");
+   Get_Line (S, I);
+   
+   Tal := I;
+      
+   Utskriv (I,I, S);
+   
+   Utskriv_2 (Tal - 1, Tal, S);
+   
+   
+end Konstig_Tri;
